@@ -1,9 +1,9 @@
 require("dotenv").config();
 
-// globalThis.sampleVariable = "Foo bar baz";
+global.sampleVariable = "Foo bar baz";
 
-const a: Foo = {
-  bar: "Foo bar baz3",
+const sampleObject: SampleType = {
+  bar: "Foo bar baz",
 };
 
-console.log("Hello world!", a);
+console.log("Hello world!", sampleObject);

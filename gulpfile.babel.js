@@ -42,7 +42,8 @@ function start() {
   return nodemon({
     script: packageJSON.main,
     ext: packageJSON.gulp.nodemonExt.join(" "),
-    tasks: ["transpile"],
+    tasks: ["transpile"], // Is it not working? :thinking:
+    exec: "ts-node --files"
   });
 }
 
